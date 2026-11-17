@@ -39,4 +39,12 @@ def obter_dados_meteorologicos():
     print(f"Velocidade do Vento: {vento} km/h")
     print(f"Horário atual : {horario}\n")
 
+    return {    
+        "temperatura": dados["current"]["temperature_2m"],    
+        "umidade": dados["current"]["relative_humidity_2m"],    
+        "sensacao_termica": dados["current"]["apparent_temperature"],    
+        "precipitacao": dados["current"]["precipitation"],        
+        "horario": dados["current"]["time"]}
+
+
 obter_dados_meteorologicos()

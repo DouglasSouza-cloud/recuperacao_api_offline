@@ -26,7 +26,7 @@ try:
     col1, col2, col3 = st.columns(3)
 
     col1.metric(
-        "temperatura",
+        "Temperatura",
         f"{dados['temperatura']:.1f} °C"
     )
 
@@ -45,11 +45,6 @@ try:
     col4.metric(
         "Precipitação",
         f"{dados['precipitacao']:.1f} mm"
-    )
-
-    col5.metric(
-        "Velocidade do vento",
-        f"{dados['velocidade_vento']:.1f} km/h"
     )
 
     st.divider()
